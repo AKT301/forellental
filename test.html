@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Videotest – Hölzler's Forellental</title>
+<style>
+  :root{
+    --tiefblau:#123a5c;
+    --stahlblau:#3c6e93;
+    --creme:#f3ece0;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    background:var(--creme);
+    color:var(--tiefblau);
+    font-family:"Helvetica Neue",Arial,sans-serif;
+    line-height:1.6;
+  }
+  .wrap{max-width:720px;margin:0 auto;padding:2.5rem 1.25rem 4rem;}
+  h1{
+    font-family:"Oswald","Arial Narrow",sans-serif;
+    font-weight:600;
+    letter-spacing:.04em;
+    text-transform:uppercase;
+    font-size:1.6rem;
+    margin:0 0 .4rem;
+  }
+  p.lead{margin:0 0 2rem;color:var(--stahlblau);}
+  .video-block{
+    background:var(--tiefblau);
+    padding:.75rem;
+    border-radius:6px;
+  }
+  video{
+    display:block;
+    width:100%;
+    height:auto;
+    border-radius:3px;
+    background:#000;
+  }
+  .caption{
+    margin:.9rem .25rem 0;
+    font-size:.9rem;
+    color:var(--creme);
+    opacity:.85;
+  }
+  h2{
+    font-family:"Oswald","Arial Narrow",sans-serif;
+    font-weight:600;
+    letter-spacing:.04em;
+    text-transform:uppercase;
+    font-size:1.15rem;
+    margin:2.75rem 0 .75rem;
+  }
+  figure{margin:0;}
+  figure img{
+    display:block;
+    width:100%;
+    height:auto;
+    border-radius:6px;
+  }
+  figcaption{
+    margin-top:.6rem;
+    font-size:.9rem;
+    color:var(--stahlblau);
+  }
+  .hinweis{
+    margin-top:2.5rem;
+    padding:1rem 1.1rem;
+    border-left:4px solid var(--stahlblau);
+    background:#fff;
+    font-size:.92rem;
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>Ein Blick in die Brutanlage</h1>
+    <p class="lead">Testseite – noch nicht verlinkt.</p>
+
+    <div class="video-block">
+      <video
+        controls
+        preload="none"
+        playsinline
+        poster="video-vorschau-2.jpg">
+        <source src="forellental-2.mp4" type="video/mp4">
+        Ihr Browser kann dieses Video nicht abspielen.
+      </video>
+      <p class="caption">Vom Ei bis zum Brütling – bei uns in Zittenfelden.</p>
+    </div>
+
+    <h2>Über uns</h2>
+    <figure>
+      <img src="brutrinne-vater-sohn.jpg" alt="Vater und Sohn an den Brutrinnen in Zittenfelden">
+      <figcaption>Zu zweit an den Brutrinnen – der Nachwuchs schaut schon genau hin.</figcaption>
+    </figure>
+
+    <div class="hinweis">
+      <strong>Zum Testen:</strong> Lädt das Video über Mobilfunk zügig? Passt das
+      Vorschaubild? Wie wirken Video und Foto auf dem Handy und am großen Bildschirm?
+    </div>
+  </div>
+</body>
+</html>
