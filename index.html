@@ -475,6 +475,11 @@ html.js .zeig.da{opacity:1;transform:none}
 .galerie .bild{aspect-ratio:3/4;border-radius:4px;min-height:0}
 .bild-ganz{display:block;margin:0 auto;max-width:100%;max-height:80vh;width:auto;height:auto;border-radius:4px}
 .bild-ganz-text{max-width:62ch;margin:1.2rem auto 0;text-align:center;font-family:var(--display)}
+.video-ganz{
+  display:block;margin:0 auto;width:100%;max-width:640px;height:auto;
+  border-radius:4px;background:var(--tief);
+}
+.video-ganz-text{max-width:62ch;margin:1.2rem auto 0;text-align:center;font-family:var(--display)}
 .galerie figcaption{
   font-family:var(--display);font-weight:400;font-size:.82rem;
   letter-spacing:.04em;color:var(--text-leise);margin-top:.6rem;line-height:1.4;
@@ -779,6 +784,14 @@ html.js .zeig.da{opacity:1;transform:none}
         <h2>Wo jeder Fisch anf&auml;ngt</h2>
         <p style="margin-top:1.4rem">In den Wintermonaten werden die Elternfische abgestreift. Die Eier kommen in die Brutrinnen, wo sie im k&uuml;hlen Quellwasser heranreifen, bis die Larven schl&uuml;pfen. Die ersten beiden Wochen zehren sie noch von ihrem Dottersack &ndash; danach beginnt das Anf&uuml;ttern, eine heikle Phase der Aufzucht. Erst wenn die Br&uuml;tlinge kr&auml;ftig genug sind, geht es Schritt f&uuml;r Schritt hinaus in die Teiche.</p>
       </div>
+      <div class="zeig" style="margin-top:2.6rem">
+        <video class="video-ganz" controls preload="none" playsinline poster="video-vorschau-2.jpg">
+          <source src="forellental-2.mp4" type="video/mp4">
+          Ihr Browser kann dieses Video nicht abspielen.
+        </video>
+        <p class="video-ganz-text">Vom Ei bis zum Br&uuml;tling &ndash; ein Blick in die Brutanlage.</p>
+      </div>
+
       <div class="galerie">
         <figure><div class="bild" data-foto="brut_eier"></div><figcaption>Abstreifen der Regenbogenforelle</figcaption></figure>
         <figure><div class="bild" data-foto="brut_saibling"></div><figcaption>Saiblingseier &ndash; deutlich heller</figcaption></figure>
