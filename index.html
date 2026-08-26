@@ -466,6 +466,14 @@ html.js .zeig.da{opacity:1;transform:none}
   html.js .zeig{opacity:1;transform:none}
 }
 
+/* ---------- Video ---------- */
+.video-block{margin-top:clamp(2rem,4vw,3rem);background:var(--tief-2);padding:clamp(10px,1.4vw,16px);border-radius:6px}
+.video-block video{display:block;width:100%;height:auto;border-radius:3px;background:#000}
+.video-block .video-text{
+  font-family:var(--display);font-weight:400;font-size:.82rem;letter-spacing:.04em;
+  color:var(--stahl);margin:.9rem .25rem 0;line-height:1.4;
+}
+
 /* ---------- Bilderreihe (Brutanlage) ---------- */
 .galerie{
   display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));
@@ -714,7 +722,7 @@ html.js .zeig.da{opacity:1;transform:none}
     <div class="seitenkopf-inhalt">
       <p class="eyebrow hell">Über uns</p>
       <h1>2021 war der Start.</h1>
-      <p>Hölzler&rsquo;s Forellental ist ein persönlich geführter Fischzuchtbetrieb mit Brutanlage in Zittenfelden und Teichen in Ottorfszell. Hinter dem Namen steht kein Konzern, sondern Alexander Hölzler.</p>
+      <p>Hölzler&rsquo;s Forellental ist ein kleiner Fischzuchtbetrieb mit Brutanlage in Zittenfelden und Teichen in Ottorfszell. Vom Ei bis zum fertigen Fisch entsteht hier alles im eigenen Betrieb.</p>
     </div>
   </div>
 
@@ -778,6 +786,13 @@ html.js .zeig.da{opacity:1;transform:none}
         <p class="eyebrow">Aus der Brutanlage</p>
         <h2>Wo jeder Fisch anf&auml;ngt</h2>
         <p style="margin-top:1.4rem">In den Wintermonaten werden die Elternfische abgestreift. Die Eier kommen in die Brutrinnen, wo sie im k&uuml;hlen Quellwasser heranreifen, bis die Larven schl&uuml;pfen. Die ersten beiden Wochen zehren sie noch von ihrem Dottersack &ndash; danach beginnt das Anf&uuml;ttern, eine heikle Phase der Aufzucht. Erst wenn die Br&uuml;tlinge kr&auml;ftig genug sind, geht es Schritt f&uuml;r Schritt hinaus in die Teiche.</p>
+      </div>
+      <div class="video-block zeig">
+        <video controls preload="none" playsinline poster="video-vorschau-2.jpg">
+          <source src="forellental-2.mp4" type="video/mp4">
+          Ihr Browser kann dieses Video nicht abspielen.
+        </video>
+        <p class="video-text">Vom Ei bis zum Br&uuml;tling &ndash; bei uns in Zittenfelden.</p>
       </div>
       <div class="galerie">
         <figure><div class="bild" data-foto="brut_eier"></div><figcaption>Abstreifen der Regenbogenforelle</figcaption></figure>
