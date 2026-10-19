@@ -483,6 +483,10 @@ html.js .zeig.da{opacity:1;transform:none}
 .galerie .bild{aspect-ratio:3/4;border-radius:4px;min-height:0}
 .bild-ganz{display:block;margin:0 auto;max-width:100%;max-height:80vh;width:auto;height:auto;border-radius:4px}
 .bild-ganz-text{max-width:62ch;margin:1.2rem auto 0;text-align:center;font-family:var(--display)}
+.galerie.drei{grid-template-columns:repeat(3,1fr)}
+.galerie.drei .bild{aspect-ratio:4/3}
+@media (max-width:640px){.galerie.drei{grid-template-columns:1fr}}
+.dunkel .galerie figcaption{color:#DAE4EC}
 .galerie figcaption{
   font-family:var(--display);font-weight:400;font-size:.82rem;
   letter-spacing:.04em;color:var(--text-leise);margin-top:.6rem;line-height:1.4;
@@ -490,6 +494,8 @@ html.js .zeig.da{opacity:1;transform:none}
 
 /* ---------- Eingebettete Fotos ---------- */
 [data-foto="bachforelle_jung"]{background-image:url("bachforelle_jung.jpg")}
+[data-foto="regenbogen_jung"]{background-image:url("regenbogen_jung.jpg")}
+[data-foto="saibling_jung"]{background-image:url("saibling_jung.jpg")}
 [data-foto="bachforelle"]{background-image:url("bachforelle.jpg")}
 [data-foto="brut_rinnen"]{background-image:url("brut_rinnen.jpg")}
 [data-foto="brut_eier"]{background-image:url("brut_eier.jpg")}
@@ -945,8 +951,8 @@ html.js .zeig.da{opacity:1;transform:none}
   </div>
 
   <div class="abschnitt dunkel wellenfeld">
-    <div class="wrap split text-rechts zeig">
-      <div>
+    <div class="wrap zeig">
+      <div style="max-width:62ch">
         <p class="eyebrow hell">Worauf wir achten</p>
         <h2>Gesunde Fische, die im Gewässer ankommen.</h2>
         <p style="margin-top:1.4rem">Besatzfische müssen mehr können, als gut auszusehen: Sie sollen im neuen Gewässer zurechtkommen. Deshalb ziehen wir unsere Brut von Anfang an mit hohem Qualitätsanspruch groß &ndash; genau wie unsere Speisefische.</p>
@@ -956,7 +962,12 @@ html.js .zeig.da{opacity:1;transform:none}
           <a class="btn btn-linie" href="#kontakt" data-ziel="kontakt">Anfrage stellen</a>
         </div>
       </div>
-      <div class="bild breit" data-foto="bachforelle_jung">
+    </div>
+    <div class="wrap">
+      <div class="galerie drei zeig">
+        <figure><div class="bild" data-foto="regenbogen_jung"></div><figcaption>Regenbogenforelle aus eigener Zucht</figcaption></figure>
+        <figure><div class="bild" data-foto="saibling_jung"></div><figcaption>Saibling aus eigener Zucht</figcaption></figure>
+        <figure><div class="bild" data-foto="bachforelle_jung"></div><figcaption>Bachforelle aus eigener Zucht</figcaption></figure>
       </div>
     </div>
   </div>
@@ -1075,7 +1086,7 @@ html.js .zeig.da{opacity:1;transform:none}
             </span>
             <span>
               <span class="kontakt-label">E-Mail</span>
-              <a class="kontakt-wert" href="mailto:alexander.hoelzler@icloud.com" style="font-size:1rem">alexander.hoelzler@icloud.com</a>
+              <a class="kontakt-wert" href="mailto:alexander@hoelzlers-forellental.de" style="font-size:1rem">alexander@hoelzlers-forellental.de</a>
             </span>
           </li>
           <li>
@@ -1090,7 +1101,7 @@ html.js .zeig.da{opacity:1;transform:none}
         </ul>
         <div class="btn-reihe">
           <a class="btn btn-dunkel" href="tel:+491706867068">Jetzt anrufen</a>
-          <a class="btn btn-dunkel-linie" href="mailto:alexander.hoelzler@icloud.com">E-Mail schreiben</a>
+          <a class="btn btn-dunkel-linie" href="mailto:alexander@hoelzlers-forellental.de">E-Mail schreiben</a>
         </div>
       </div>
       <div>
@@ -1207,7 +1218,7 @@ html.js .zeig.da{opacity:1;transform:none}
       <p style="margin-top:.8rem">
         Telefon: <a href="tel:+4993734484">09373 / 4484</a><br>
         Mobil: <a href="tel:+491706867068">0170 / 6867068</a><br>
-        E-Mail: <a href="mailto:alexander.hoelzler@icloud.com">alexander.hoelzler@icloud.com</a>
+        E-Mail: <a href="mailto:alexander@hoelzlers-forellental.de">alexander@hoelzlers-forellental.de</a>
       </p>
 
       <h3 style="margin-top:2rem">Art des Betriebs</h3>
@@ -1253,7 +1264,7 @@ html.js .zeig.da{opacity:1;transform:none}
         Hölzler&rsquo;s Forellental<br>
         Frühlingstraße 23, 63931 Kirchzell<br>
         Telefon: <a href="tel:+4993734484">09373 / 4484</a><br>
-        E-Mail: <a href="mailto:alexander.hoelzler@icloud.com">alexander.hoelzler@icloud.com</a>
+        E-Mail: <a href="mailto:alexander@hoelzlers-forellental.de">alexander@hoelzlers-forellental.de</a>
       </p>
 
       <h3 style="margin-top:2rem">Keine Cookies, keine Auswertung</h3>
@@ -1308,7 +1319,7 @@ html.js .zeig.da{opacity:1;transform:none}
       <ul class="fuss-liste">
         <li><a href="tel:+4993734484">09373 / 4484</a></li>
         <li><a href="tel:+491706867068">0170 / 6867068</a></li>
-        <li><a href="mailto:alexander.hoelzler@icloud.com">alexander.hoelzler@icloud.com</a></li>
+        <li><a href="mailto:alexander@hoelzlers-forellental.de">alexander@hoelzlers-forellental.de</a></li>
         <li style="margin-top:.5rem"><span style="color:var(--stahl)">Navi-Adresse:</span><br>Klingenweg 5<br>63931 Kirchzell / Ottorfszell</li>
         <li style="margin-top:.6rem"><a class="insta-link" href="#" target="_blank" rel="noopener">Instagram</a></li>
       </ul>
